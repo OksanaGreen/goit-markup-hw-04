@@ -249,6 +249,32 @@ img {
   /* SLATE */
   color: var(--paragraph-color);
 }
+.inform-list {
+  display: flex;
+  gap: 24px;
+}
+
+.inform-item-icon {
+  width: calc((100%-72px) / 4);
+  height: 112px;
+}
+.inform-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inform-link:is(:hover, :focus) {
+  border-color: #4d5ae5;
+}
+.inform-link:is(:hover, :focus).inform-icon {
+  fill: #4d5ae5;
+}
+
+.inform-icon {
+}
 /*-----Doing--------*/
 .doing {
   padding-bottom: 120px;
@@ -331,7 +357,7 @@ img {
   border-radius: 50%;
 }
 .team-soc-link:is(:hover, :focus) {
-  background-color: #404bbfB;
+  background-color: #404bbf;
 }
 .customers {
   padding-top: 120px;
@@ -360,20 +386,21 @@ img {
 .customers-link:is(:hover, :focus) {
   border-color: #9747ff;
 }
-.customers-link:is(:hover, :focus).customers-icon {
+.customers-link:is(:hover, :focus) .customers-icon {
   fill: #9747ff;
 }
 
 /*-----Footer--------*/
 
 .footer {
-  padding-top: 100px;
+  gap: 120px;
+  display: flex;
+  align-items: baseline;
   padding-bottom: 100px;
   outline: 2px solid tomato;
   background: #2e2f42;
 }
 .footer-conteiner {
-  display: flex;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -387,8 +414,10 @@ img {
   color: #f4f4fd;
 }
 .footer-tagline {
-  width: 264px;
   margin-top: 16px;
+  display: flex;
+  padding-left: 158px;
+  width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -396,6 +425,7 @@ img {
   color: #e7e9fc;
 }
 .span-footer-logo {
+  padding-left: 158px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -408,10 +438,11 @@ img {
 }
 
 .footer-media-title {
-  display: flex;
+  display: block;
   padding-top: 100px;
-  padding-left: 269px;
   margin-bottom: 16px;
+  margin-right: auto;
+  margin-left: auto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -420,8 +451,6 @@ img {
 }
 .media-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 16px;
 }
 .media-item {
@@ -436,9 +465,17 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  border: 1px solid;
+}
+.media-link:is(:hover, :focus) {
+  border-color: #9747ff;
+}
+.media-link:is(:hover, :focus).media-icom {
+  fill: #9747ff;
 }
 
 .media-icom {
+  fill: #f4f4fd;
 }
 /*-----portfolio----*/
 .portfolio {
