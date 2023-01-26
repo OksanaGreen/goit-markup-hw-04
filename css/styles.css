@@ -393,14 +393,19 @@ img {
 /*-----Footer--------*/
 
 .footer {
-  gap: 120px;
-  display: flex;
   align-items: baseline;
+  display: flex;
+  padding-top: 100px;
   padding-bottom: 100px;
   outline: 2px solid tomato;
   background: #2e2f42;
 }
 .footer-conteiner {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -416,6 +421,7 @@ img {
 .footer-tagline {
   margin-top: 16px;
   display: flex;
+  padding-right: 120px;
   padding-left: 158px;
   width: 264px;
   font-size: 16px;
@@ -438,11 +444,10 @@ img {
 }
 
 .footer-media-title {
-  display: block;
-  padding-top: 100px;
+  align-items: center;
+  justify-content: center;
+  display: flexbox;
   margin-bottom: 16px;
-  margin-right: auto;
-  margin-left: auto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
