@@ -218,10 +218,8 @@ img {
 /*-----information--------*/
 .information {
   padding-top: 120px;
-  padding-bottom: 120px;
 }
 .hidden {
-  outline: 2px solid rgb(175, 71, 255);
 }
 .information-list {
   justify-content: center;
@@ -261,7 +259,6 @@ img {
 
 .inform-item-icon {
   width: calc((100%-72px) / 4);
-  height: 112px;
 }
 .inform-link {
   width: 100%;
@@ -271,7 +268,7 @@ img {
   justify-content: center;
 }
 .inform-icon {
-  fill: #4d5ae5;
+  fill: #2e2f42;
 }
 .information-item:is(:hover, :focus) {
   border-color: #4d5ae5;
@@ -325,7 +322,6 @@ img {
   align-items: center;
   justify-content: center;
   display: flex;
-  flex-wrap: wrap;
   gap: 24px;
 }
 .team-item {
@@ -371,8 +367,19 @@ img {
   background-color: #404bbf;
 }
 .customers {
-  padding-top: 120px;
+  outline: 4px rgb(139, 46, 46);
   padding-bottom: 120px;
+  padding-top: 130px;
+}
+.cuctomers-title {
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.12;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
 }
 .cuctomers-list {
   display: flex;
@@ -477,7 +484,6 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  border: 1px solid;
 }
 .media-icon {
   fill: #f4f4fd;
@@ -518,6 +524,8 @@ img {
 .portfolio-btn:focus {
   color: #ffffff;
   background: #4d5ae5;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .heder-portfolio {
   background: #ffffff;
@@ -547,13 +555,15 @@ img {
   letter-spacing: 0.02em;
 }
 .portfolio-borders {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
-
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
   background: #ffffff;
   padding: 32px 16px;
+}
+.portfolio-borders:hover,
+.portfolio-borders:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
